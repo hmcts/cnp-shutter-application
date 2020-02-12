@@ -5,7 +5,7 @@
 
 properties([
   parameters([
-    [choice(choices: ['ignore-me-just-used-for-description'], description: '''<h2>Deprecated</h2>
+    choice(choices: ['ignore-me-just-used-for-description'], description: '''<h2>Deprecated</h2>
 
 <p>Shuttering is now done via <a href="https://github.com/hmcts/azure-public-dns">azure-public-dns</a> for all new applications,</p>
 <p>Applications will be removed from the below list as they are migrated across.</p>
