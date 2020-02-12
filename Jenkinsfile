@@ -8,7 +8,7 @@ properties([
     choice(choices: ['ignore-me-just-used-for-description'], description: '''<h2>Deprecated</h2>
 
 <p>Shuttering is now done via <a href="https://github.com/hmcts/azure-public-dns">azure-public-dns</a> for all new applications,</p>
-<p>Applications will be removed from list as they are migrated across.</p>
+<p>Applications will be removed from the below list as they are migrated across.</p>
 
 <p>If you can\'t find an application in the list update it\'s shutter value to true in azure-public-dns.</p>
 <p>See the full <a href="https://hmcts.github.io/ways-of-working/path-to-live/shutter.html">documentation</a>.</p>''', name: 'Deprecation Warning')]),
@@ -24,4 +24,3 @@ node {
    shutter(params.PRODUCT_NAME, params.ENVIRONMENT , params.SUBSCRIPTION, params.STATUS)
  }
 }
-
