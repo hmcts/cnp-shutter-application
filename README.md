@@ -1,3 +1,9 @@
+### **_IMPORTANT NOTE_** 
+
+**This repository will soon be _DEPRECATED_ once all the frontend applications will be migrated to Azure Kubernetes Service.**
+
+**All efforts are going towards using the [new shutter solution](https://hmcts.github.io/ways-of-working/path-to-live/shutter.html#shutter-implementation-and-design) for your applications.**
+
 # Shuttering applications
 
 This should be used to enable a maintenance page for a product
