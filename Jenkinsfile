@@ -12,7 +12,7 @@ properties([
 
 <p>If you can\'t find an application in the list update it\'s shutter value to true in azure-public-dns.</p>
 <p>See the full <a href="https://hmcts.github.io/ways-of-working/path-to-live/shutter.html">documentation</a>.</p>'''),
-    choice(name: 'PRODUCT_NAME', choices: 'jui-webapp\nbar-web\nidam-web-admin-idam\nidam-web-public-idam\njui-webapp-web\nxui-ao-webapp\nxui-mo-webapp\nxui-webapp', description: 'Product + app name, i.e. cmc-citizen-frontend'),
+    choice(name: 'PRODUCT_NAME', choices: 'idam-web-admin-idam\nidam-web-public-idam', description: 'Product + app name, i.e. cmc-citizen-frontend'),
     choice(name: 'ENVIRONMENT', choices: 'aat\ndemo\nprod', description: 'Environment where code should be build and deployed'),
     choice(name: 'SUBSCRIPTION', choices: 'nonprod\nprod', description: 'Azure subscriptions available to build in'),
     choice(name: 'STATUS', choices: 'off\non', description: 'off = no shutter page, on = shuttered. Takes ~2 minutes to take affect because of DNS')
